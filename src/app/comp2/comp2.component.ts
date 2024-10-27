@@ -4,7 +4,8 @@ import { someService } from '../some.service';
 @Component({
   selector: 'app-comp2',
   templateUrl: './comp2.component.html',
-  styleUrls: ['./comp2.component.css']
+  styleUrls: ['./comp2.component.css'],
+  providers:[someService]
 })
 export class Comp2Component  {
   userCount: number = 0;
