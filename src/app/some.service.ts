@@ -1,10 +1,10 @@
 import { Injectable } from "@angular/core";
 
-@Injectable()
+@Injectable({providedIn:'root'})
 export class someService{
     numberOfUsers : number = 0;
     getUsers(){
-        console.log(this.numberOfUsers)
+        return this.numberOfUsers
     }
 
     increaseUser(){
